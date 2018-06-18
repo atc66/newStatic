@@ -26,9 +26,25 @@ html {
   margin: 0 auto;
 }
 
+section {
+  padding: 80px 0;
+}
+
+.box {
+  padding: 1%;
+}
+
 /* ------------------------- */
 /* --------Headings--------- */
 /* ------------------------- */
+h1,
+h2,
+h3 {
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
 h1 {
   /* h1 has magin from normalize */
   margin-top: 0;
@@ -36,12 +52,60 @@ h1 {
   color: #fff;
   /* Our basic font size is 20px set in the html rule, we want this to be 200% */
   font-size: 240%;
-  font-weight: 300;
-  text-transform: uppercase;
-  letter-spacing: 1px;
   word-spacing: 3px;
 }
 
+h2 {
+  font-size: 180%;
+  word-spacing: 2px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h3 {
+  font-size: 110%;
+  margin-bottom: 15px;
+}
+
+h2:after {
+  display: block;
+  height: 2px;
+  background-color: #e67e22;
+  content: " ";
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+/* ----------- */
+/* Paragraphs */
+/* --------- */
+
+.long-copy {
+  line-height: 145%;
+  width: 70%;
+  margin-left: 15%;
+}
+
+.box p {
+  font-size: 90%;
+  line-height: 145%;
+}
+
+/* ----- */
+/* Icons */
+/* ----- */
+
+.icon-big {
+  font-size: 300%;
+  display: block;
+  color: #e67e22;
+  margin-bottom: 10px;
+}
+
+/* -------- */
+/* NavBar  */
+/* ------ */
 .logo {
   height: 100px;
   width: auto;
