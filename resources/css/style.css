@@ -29,9 +29,9 @@ html {
   visibility: hidden;
 }
 
-/*  */
+/* -----------------------------------  */
 /* --------Reusable Components---------*/
-/*  */
+/* ---------------------------------- */
 
 .row {
   max-width: 1140px;
@@ -188,8 +188,13 @@ h2:after {
 /* --------Buttons--------- */
 /* ------------------------ */
 
+input[type="submit"] {
+  cursor: pointer;
+}
+
 .btn:link,
-.btn:visited {
+.btn:visited,
+input[type="submit"] {
   display: inline-block;
   padding: 10px 30px;
   font-weight: 300;
@@ -200,7 +205,8 @@ h2:after {
 }
 
 .btn-full:link,
-.btn-full:visited {
+.btn-full:visited,
+input[type="submit"] {
   color: #fff;
   background-color: #e67e22;
   margin-right: 15px;
@@ -212,7 +218,9 @@ h2:after {
 }
 
 .btn:hover,
-.btn:active {
+.btn:active,
+input[type="submit"]:hover,
+input[type="submit"]:active {
   background-color: #cf6d17;
 }
 
@@ -431,7 +439,7 @@ cite img {
 }
 
 .plan-box div:last-child {
-  /* text-align: center; */
+  text-align: center;
   border: 0;
 }
 
@@ -457,4 +465,34 @@ cite img {
 
 .plan-box ul li {
   padding: 5px 0;
+}
+
+/* ---------------- */
+/* Contact form --- */
+/* ---------------- */
+
+.contact-form {
+  width: 60%;
+  margin: 0 auto;
+}
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 7px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+textarea {
+  height: 100px;
+}
+
+input[type="checkbox"] {
+  margin: 10px 5px 10px 0;
+}
+
+*:focus {
+  outline: none;
 }
