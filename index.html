@@ -12,6 +12,8 @@
     <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
     <!-- ion icons -->
     <link href="https://unpkg.com/ionicons@4.2.0/dist/css/ionicons.min.css" rel="stylesheet">
+    <!-- Animate.css -->
+    <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
     <!-- Our CSS -->
     <link rel="stylesheet" type="text/css" href="resources/css/style.css">
     <!-- Media Queries -->
@@ -26,7 +28,7 @@
             <div class="row">
                 <img src="resources/css/img/logo-white.png" alt="Omnifood Logo" class="logo">
                 <img src="resources/css/img/logo.png" alt="Omnifood Logo" class="logo-black">
-                <ul class="main-nav">
+                <ul class="main-nav js--main-nav">
                     <li>
                         <a href="#features">Food Delivery</a>
                     </li>
@@ -40,6 +42,9 @@
                         <a href="#plans">Sign Up</a>
                     </li>
                 </ul>
+                <a class="mobile-nav-icon js--nav-icon">
+                    <i class="icon ion-md-menu"></i>
+                </a>
             </div>
         </nav>
         <div class="hero-text-box">
@@ -50,7 +55,6 @@
         </div>
     </header>
 
-    <!-- Need to check offset and why that is not working -->
     <section class="section-features js--section-features" id="features">
         <div class="row">
             <h2>Get food fast &mdash; not fast food</h2>
@@ -60,7 +64,7 @@
             </p>
         </div>
 
-        <div class="row">
+        <div class="row js--wp-1">
             <div class="col span-1-of-4 box">
                 <i class="icon ion-md-calendar icon-big"></i>
                 <h3> Up to 365 days/year </h3>
@@ -141,7 +145,7 @@
         </div>
         <div class="row">
             <div class="col span-1-of-2 steps-box">
-                <img src="resources/css/img/app-iPhone.png" alt="iPhone with Omnifood App" class="app-screen">
+                <img src="resources/css/img/app-iPhone.png" alt="iPhone with Omnifood App" class="app-screen js--wp-2">
             </div>
             <div class="col span-1-of-2 steps-box">
                 <div class="works-step">
@@ -167,7 +171,7 @@
         <div class="row">
             <h2>We're currently in these cities</h2>
         </div>
-        <div class="row">
+        <div class="row js--wp-3">
             <div class="col span-1-of-4 box">
                 <figure class="city-photo">
                     <img src="resources/css/img/lisbon-3.jpg" alt="Lisbon">
@@ -280,7 +284,7 @@
         </div>
         <div class="row">
             <div class="col span-1-of-3">
-                <div class="plan-box">
+                <div class="plan-box js--wp-4">
                     <div>
                         <h3>Premium</h3>
                         <p class="plan-price">
