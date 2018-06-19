@@ -1,18 +1,17 @@
 $(document).ready(function() {
   // Sticky nav display
-  $(".js--section-features").waypoint(function(direction) {
-    if (direction == "down") {
-      $("nav").addClass("sticky");
-    } else {
-      $("nav").removeClass("sticky");
+  $(".js--section-features").waypoint(
+    function(direction) {
+      if (direction == "down") {
+        $("nav").addClass("sticky");
+      } else {
+        $("nav").removeClass("sticky");
+      }
+    },
+    {
+      offset: "60px"
     }
-  });
-
-  // var waypoints = $('#handler-first').waypoint(function(direction) {
-  //   notify(this.element.id + ' hit 25% from top of window')
-  // }, {
-  //   offset: '25%'
-  // })
+  );
 
   // Scroll on buttons
   $(".js--scroll-to-plans").click(function() {
@@ -72,4 +71,60 @@ $(document).ready(function() {
         }
       }
     });
+
+  // Animation on scroll
+  // Hidden how it works
+  $(".js--wp-1").waypoint(
+    function(direction) {
+      $(".js--wp-1").addClass("animated fadeIn");
+    },
+    {
+      offset: "50%"
+    }
+  );
+
+  // Hidden iPhone
+  $(".js--wp-2").waypoint(
+    function(direction) {
+      $(".js--wp-2").addClass("animated fadeInUp");
+    },
+    {
+      offset: "50%"
+    }
+  );
+
+  // Hidden how it works
+  $(".js--wp-3").waypoint(
+    function(direction) {
+      $(".js--wp-3").addClass("animated fadeIn");
+    },
+    {
+      offset: "50%"
+    }
+  );
+
+  // Hidden how it works
+  $(".js--wp-4").waypoint(
+    function(direction) {
+      $(".js--wp-4").addClass("animated pulse");
+    },
+    {
+      offset: "50%"
+    }
+  );
+
+  // Hidden Navbar/mobile nav
+  $(".js--nav-icon").click(function() {
+    var nav = $(".js--main-nav");
+    var icon = $(".js--nav-icon i");
+    nav.slideToggle(200);
+
+    if (icon.hasClass("ion-md-menu")) {
+      icon.addClass("ion-md-close");
+      icon.removeClass("ion-md-menu");
+    } else {
+      icon.addClass("ion-md-menu");
+      icon.removeClass("ion-md-close");
+    }
+  });
 });
