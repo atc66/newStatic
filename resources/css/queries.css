@@ -65,7 +65,7 @@
   }
 
   .contact-form {
-    width: 80%;
+    width: 90%;
   }
 }
 
@@ -173,6 +173,26 @@
 
   .contact-form {
     width: 90%;
+  }
+
+  .map-box {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .map {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    z-index: 0;
+  }
+
+  .form-box {
+    width: 100%;
+    height: auto;
+    padding-top: 30px;
+    position: relative;
   }
 }
 

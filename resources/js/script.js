@@ -127,4 +127,12 @@ $(document).ready(function() {
       icon.removeClass("ion-md-close");
     }
   });
+
+  // Map
+  new GMaps({
+    div: ".map",
+    zoom: 15,
+    lat: 39.9523789,
+    lng: -75.1657936
+  });
 });
